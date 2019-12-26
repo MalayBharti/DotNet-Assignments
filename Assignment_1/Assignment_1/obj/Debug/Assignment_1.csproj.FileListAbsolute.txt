@@ -1,0 +1,7 @@
+C:\WrokSpace\Assignment_1\Assignment_1\bin\Debug\Assignment_1.exe.config
+C:\WrokSpace\Assignment_1\Assignment_1\bin\Debug\Assignment_1.exe
+C:\WrokSpace\Assignment_1\Assignment_1\bin\Debug\Assignment_1.pdb
+C:\WrokSpace\Assignment_1\Assignment_1\obj\Debug\Assignment_1.csprojAssemblyReference.cache
+C:\WrokSpace\Assignment_1\Assignment_1\obj\Debug\Assignment_1.exe
+C:\WrokSpace\Assignment_1\Assignment_1\obj\Debug\Assignment_1.pdb
+C:\WrokSpace\Assignment_1\Assignment_1\obj\Debug\Assignment_1.csproj.CoreCompileInputs.cache

@@ -1,0 +1,6 @@
+C:\WrokSpace\CollectionDemo\CustomCollection\bin\Debug\CustomCollection.exe.config
+C:\WrokSpace\CollectionDemo\CustomCollection\bin\Debug\CustomCollection.exe
+C:\WrokSpace\CollectionDemo\CustomCollection\bin\Debug\CustomCollection.pdb
+C:\WrokSpace\CollectionDemo\CustomCollection\obj\Debug\CustomCollection.csproj.CoreCompileInputs.cache
+C:\WrokSpace\CollectionDemo\CustomCollection\obj\Debug\CustomCollection.exe
+C:\WrokSpace\CollectionDemo\CustomCollection\obj\Debug\CustomCollection.pdb

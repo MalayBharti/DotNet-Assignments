@@ -1,0 +1,7 @@
+C:\WrokSpace\CollectionDemo\CollectionDemo\bin\Debug\CollectionDemo.exe.config
+C:\WrokSpace\CollectionDemo\CollectionDemo\bin\Debug\CollectionDemo.exe
+C:\WrokSpace\CollectionDemo\CollectionDemo\bin\Debug\CollectionDemo.pdb
+C:\WrokSpace\CollectionDemo\CollectionDemo\obj\Debug\CollectionDemo.csprojAssemblyReference.cache
+C:\WrokSpace\CollectionDemo\CollectionDemo\obj\Debug\CollectionDemo.exe
+C:\WrokSpace\CollectionDemo\CollectionDemo\obj\Debug\CollectionDemo.pdb
+C:\WrokSpace\CollectionDemo\CollectionDemo\obj\Debug\CollectionDemo.csproj.CoreCompileInputs.cache

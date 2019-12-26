@@ -1,0 +1,6 @@
+C:\WrokSpace\CollectionDemo\CollectionPractice\bin\Debug\CollectionPractice.exe.config
+C:\WrokSpace\CollectionDemo\CollectionPractice\bin\Debug\CollectionPractice.exe
+C:\WrokSpace\CollectionDemo\CollectionPractice\bin\Debug\CollectionPractice.pdb
+C:\WrokSpace\CollectionDemo\CollectionPractice\obj\Debug\CollectionPractice.csproj.CoreCompileInputs.cache
+C:\WrokSpace\CollectionDemo\CollectionPractice\obj\Debug\CollectionPractice.exe
+C:\WrokSpace\CollectionDemo\CollectionPractice\obj\Debug\CollectionPractice.pdb
