@@ -56,11 +56,17 @@ namespace LibraryManagement
             Console.WriteLine("Enter Customer Id:");
             var customerId = Convert.ToInt32(Console.ReadLine());
             var customerDetails = dbContext.Customers.Where(c => c.CustomerId == customerId);
-            foreach (var item in customerDetails)
+            if (customerDetails.Count()==0)
             {
-                Console.WriteLine("Name = " + item.CustomerName);
+                Console.WriteLine("No Customer found with this Id");
             }
-
+            else
+            {
+                foreach (var item in customerDetails)
+                {
+                    Console.WriteLine("Name = " + item.CustomerName);
+                }
+            }
         }
 
         // This Method is to add new Customer. 
@@ -83,10 +89,20 @@ namespace LibraryManagement
         public void RemoveCustomer()
         {
             Console.WriteLine("Enter Customer id to remove");
-            var customerIdRemove = Convert.ToInt32(Console.ReadLine());
-            var customerRemove = dbContext.Customers.FirstOrDefault(c => c.CustomerId == customerIdRemove);
-            dbContext.Customers.Remove(customerRemove);
-            dbContext.SaveChanges();
+            try
+            {
+                var customerIdRemove = Convert.ToInt32(Console.ReadLine());
+                var customerRemove = dbContext.Customers.FirstOrDefault(c => c.CustomerId == customerIdRemove);
+
+                dbContext.Customers.Remove(customerRemove);
+                dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Can't remove ! Customer is issued with book/s."); ;
+            }
+            
         }
 
         // This Method is to Update existing Customer. 

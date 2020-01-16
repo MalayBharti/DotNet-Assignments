@@ -22,6 +22,8 @@ namespace LibraryManagement
                 Console.WriteLine("2: Add New Book:");
                 Console.WriteLine("3: Remove Book:");
                 Console.WriteLine("4: Update Book Details:");
+                Console.WriteLine("5: Get list of Books.");
+
 
                 var choiceInput = Convert.ToInt32(Console.ReadLine());
 
@@ -41,6 +43,10 @@ namespace LibraryManagement
 
                     case 4:
                         UpdateBook();
+                        break;
+
+                    case 5:
+                        GetAllBookList();
                         break;
                     default:
                         Console.WriteLine("Not a valid choice");
@@ -125,6 +131,19 @@ namespace LibraryManagement
                 dbContext.Entry(bookUpdate).State = EntityState.Modified;
 
                 dbContext.SaveChanges();
+            }
+        }
+
+        // Method to fetch all the books.
+
+        public void GetAllBookList()
+        {
+            var booklist = dbContext.Books.Select(s => s);
+
+            Console.WriteLine("List Of Books are - ");
+            foreach (var item in booklist)
+            {
+                Console.WriteLine(item.BookName);
             }
         }
     }
