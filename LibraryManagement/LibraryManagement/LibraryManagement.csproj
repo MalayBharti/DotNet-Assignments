@@ -53,7 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\202001160612149_BookIssue_modelAdded.cs" />
+    <Compile Include="Migrations\202001160612149_BookIssue_modelAdded.designer.cs">
+      <DependentUpon>202001160612149_BookIssue_modelAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\BookIssue.cs" />
+    <Compile Include="Service\BookIssueService.cs" />
     <Compile Include="Service\BookService.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Service\CommonService.cs" />
@@ -74,6 +80,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202001150944533_Book_Customer_Created.resx">
       <DependentUpon>202001150944533_Book_Customer_Created.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001160612149_BookIssue_modelAdded.resx">
+      <DependentUpon>202001160612149_BookIssue_modelAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

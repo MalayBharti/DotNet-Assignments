@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagement.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace LibraryManagement.Service
             {
                 Console.WriteLine("Enter 1 for Customer Service Option");
                 Console.WriteLine("Enter 2 for Book Service Option");
+                Console.WriteLine("Enter 3 for BookIssue Service Option");
 
                 var choiceInput = Convert.ToInt32(Console.ReadLine());
 
@@ -29,6 +31,11 @@ namespace LibraryManagement.Service
                     case 2:
                         BookService bookService = new BookService();
                         bookService.BookOptions();
+                        break;
+
+                    case 3:
+                        BookIssueService bookIssueService = new BookIssueService();
+                        bookIssueService.BookIssueOperation();
                         break;
 
                     default:

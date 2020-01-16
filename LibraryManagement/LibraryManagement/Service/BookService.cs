@@ -42,6 +42,9 @@ namespace LibraryManagement
                     case 4:
                         UpdateBook();
                         break;
+                    default:
+                        Console.WriteLine("Not a valid choice");
+                        break;
                 }
                 Console.WriteLine("Want to perform other book operation (y/n)");
                 more = Console.ReadLine();
@@ -89,8 +92,16 @@ namespace LibraryManagement
             Console.WriteLine("Enter Book id to remove");
             var bookIdRemove = Convert.ToInt32(Console.ReadLine());
             var bookRemove = dbContext.Books.FirstOrDefault(b => b.BookId == bookIdRemove);
-            dbContext.Books.Remove(bookRemove);
-            dbContext.SaveChanges();
+
+            if(bookRemove.IsAvailbale == false)
+            {
+                Console.WriteLine("Can't Remove. Book is Issued to Customer.");
+            }
+            else
+            {
+                dbContext.Books.Remove(bookRemove);
+                dbContext.SaveChanges();
+            }
         }
 
         // This Method is to Update existing Book. 
@@ -100,14 +111,21 @@ namespace LibraryManagement
             Console.WriteLine("Enter Book Id to update");
             var bookIdUpdate = Convert.ToInt32(Console.ReadLine());
             var bookUpdate = dbContext.Books.FirstOrDefault(b => b.BookId == bookIdUpdate);
-            Book newBook = new Book();
-            Console.WriteLine("Enter New BookName: ");
-            var newName = Console.ReadLine();
-            bookUpdate.BookName = newName;
-            dbContext.Entry(bookUpdate).State = EntityState.Modified;
 
-            dbContext.SaveChanges();
+            if(bookUpdate.IsAvailbale == false)
+            {
+                Console.WriteLine("Can't Update. Book is Issued to Customer. ");
+            }
+            else
+            {
+                Book newBook = new Book();
+                Console.WriteLine("Enter New BookName: ");
+                var newName = Console.ReadLine();
+                bookUpdate.BookName = newName;
+                dbContext.Entry(bookUpdate).State = EntityState.Modified;
 
+                dbContext.SaveChanges();
+            }
         }
     }
 }

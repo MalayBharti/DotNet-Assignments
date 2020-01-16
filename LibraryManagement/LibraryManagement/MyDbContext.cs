@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagement.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -17,5 +18,7 @@ namespace LibraryManagement
         public DbSet<Customer> Customers { get; set; }
 
         public DbSet<Book> Books { get; set; }
+
+        public DbSet<BookIssue> BookIssues { get; set; }
     }
 }
