@@ -124,7 +124,6 @@ namespace LibraryManagement
             }
             else
             {
-                Book newBook = new Book();
                 Console.WriteLine("Enter New BookName: ");
                 var newName = Console.ReadLine();
                 bookUpdate.BookName = newName;
